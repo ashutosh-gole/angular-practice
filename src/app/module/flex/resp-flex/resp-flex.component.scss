@@ -1,0 +1,40 @@
+@import '../../../styles/variable.scss';
+
+.lang-page{
+    background-color: #c4d2d2;
+    
+    .lang-section {
+        background: #4DA0B0;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #D39D38, #4DA0B0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        border: 1px solid #6b0606;
+        border-radius: 25px;
+        margin: 10px;
+        padding: 14px;
+
+        &:hover {
+            cursor: pointer;
+            -webkit-box-shadow: 0 10px 6px -6px #777;
+            -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+            transition: box-shadow .6s;
+        }
+
+        .lang-name {
+            margin: 4px 0;
+            font-family: $poppins;
+            font-size: 14px;
+            font-weight: bold;
+            opacity: 1;
+        }
+
+        .lang-info {
+            font-family: $poppins;
+            font-size: 12px;
+            font-weight: 500;
+            opacity: 1;
+        }
+    }
+
+}
