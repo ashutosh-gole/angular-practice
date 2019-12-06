@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/core/shared.module';
 
-import { RespFlexComponent } from './resp-flex/resp-flex.component';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: RespFlexComponent
+    component: PropertyBindingComponent
   },
   {
     path: '**',
@@ -17,13 +17,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    RespFlexComponent
-  ],
+  declarations: [PropertyBindingComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
     SharedModule
   ]
 })
-export class FlexModule { }
+export class PropertyBindingModule { }

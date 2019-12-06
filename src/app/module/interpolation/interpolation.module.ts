@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/core/shared.module';
 
-import { RespFlexComponent } from './resp-flex/resp-flex.component';
+import { InterpolationComponent } from './interpolation/interpolation.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: RespFlexComponent
+    component: InterpolationComponent
   },
   {
     path: '**',
@@ -18,7 +18,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    RespFlexComponent
+    InterpolationComponent
   ],
   imports: [
     CommonModule,
@@ -26,4 +26,4 @@ const routes: Routes = [
     SharedModule
   ]
 })
-export class FlexModule { }
+export class InterpolationModule { }

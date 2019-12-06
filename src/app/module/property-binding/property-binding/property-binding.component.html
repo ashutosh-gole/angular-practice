@@ -1,0 +1,20 @@
+<div fxLayout="column" fxLayoutAlign="center center">
+    <h1>property binding</h1>
+    <div>
+        image : <img [src]="mySrc" [height]="myHeight" [width]="myWidth" [alt]="myAlt" [title]="myTitle" />
+    </div>
+    <div>
+        enter your name : <input [type]="myType1" [autofocus]="myAutofocus" [id]="myId1" [name]="myName1"><br>
+        enter your password : <input [type]="myType2"><br>
+        <input [type]="myType3" [value]="myValue" [name]="myName2">
+    </div>
+    <div>
+        enter your age : <input [type]="myType4" name="quantity" [min]="myMin" [max]="myMax">
+    </div>
+    <hr>
+    <div>
+        <video width="320" height="240" controls>
+            <source [src]="myVideoSrc" [type]="myType5">
+        </video>
+    </div>
+</div>

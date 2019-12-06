@@ -19,6 +19,14 @@ const routes: Routes = [
         loadChildren: () => import('../pipe/pipe.module').then(m => m.PipeModule)
       },
       {
+        path: 'interpolation',
+        loadChildren: () => import('../interpolation/interpolation.module').then(m => m.InterpolationModule)
+      },
+      {
+        path: 'property-binding',
+        loadChildren: () => import('../property-binding/property-binding.module').then(m => m.PropertyBindingModule)
+      },
+      {
         path: '',
         redirectTo: 'resp-flex',
         pathMatch: 'full'
