@@ -4,10 +4,16 @@
     background: #ee9ca7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 100vh;
+    // height: 100vh;
 
     .concept-section {
+        height: 106px;
+        width: 100% !important;
         background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
 
         .concept-info {
             transition: all 0.3s ease-in-out;
@@ -36,6 +42,11 @@
             }
         }
         
+    }
+
+    .main-content {
+        width: 100% !important;
+        margin-top: 106px;
     }
 
 }

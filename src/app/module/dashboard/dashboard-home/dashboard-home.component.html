@@ -1,11 +1,11 @@
 <div class="dashboard-home" fxLayout="column" fxLayoutAlign="start stretch">
     <div class="concept-section" fxLayout="row wrap" fxLayoutAlign="start stretch">
         <div class="concept-info" fxLayout="row" fxLayoutAlign="center center" *ngFor="let concept of concepts"
-        [routerLink]="concept?.path">
+        [routerLink]="concept?.path" [routerLinkActive]="['active']">
             <span class="concept-name">{{ concept?.name }}</span>
         </div>
     </div>
-    <div>
+    <div class="main-content">
         <router-outlet></router-outlet>
     </div>
 </div>
