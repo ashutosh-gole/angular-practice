@@ -1,0 +1,33 @@
+<div fxLayout="column" fxLayoutAlign="start center">
+    <h1>Built-in Pipe</h1>
+    <div>
+        <hr>
+        <h4>Uppercase Pipe</h4>
+        <span>{{title | uppercase}}</span><br />
+        <hr>
+        <h4>Lowercase Pipe</h4>
+        <span>{{title | lowercase}}</span>
+        <hr>
+        <h4>Currency Pipe</h4>
+        <span>{{6589.23 | currency}}</span><br />
+        <hr>
+        <h4>Date pipe</h4>
+        <span>{{todaydate | date:'d/M/y'}}</span><br />
+        <span>{{todaydate | date:'shortTime'}}</span>
+        <hr>
+        <h4>Decimal Pipe</h4>
+        <span>{{ 454.78787814 | number: '3.4-4' }}</span>
+        <i>// 3 is for main integer, 4 -4 are for integers to be displayed.</i>
+        <hr>
+        <h4>Json Pipe</h4>
+        <span>{{ jsonval | json }}</span>
+        <hr>
+        <h4>Percent Pipe</h4>
+        <span>{{00.54565 | percent}}</span>
+        <hr>
+        <h4>Slice Pipe</h4>
+        <span>{{months | slice:2:6}}</span>
+        <i>// here 2 and 6 refers to the start and the end index</i>
+        <hr>
+    </div>
+</div>

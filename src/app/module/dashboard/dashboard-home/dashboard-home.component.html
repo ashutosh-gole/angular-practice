@@ -1,1 +1,11 @@
-<router-outlet></router-outlet>
+<div class="dashboard-home" fxLayout="column" fxLayoutAlign="start stretch">
+    <div class="concept-section" fxLayout="row wrap" fxLayoutAlign="start stretch">
+        <div class="concept-info" fxLayout="row" fxLayoutAlign="center center" *ngFor="let concept of concepts"
+        [routerLink]="concept?.path">
+            <span class="concept-name">{{ concept?.name }}</span>
+        </div>
+    </div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</div>

@@ -1,18 +1,33 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
+import { SharedModule } from 'src/app/core/shared.module';
 
 import { DashboardHomeComponent } from './dashboard-home/dashboard-home.component';
-import { SharedModule } from 'src/app/core/shared.module';
 
 const routes: Routes = [
   {
     path: '',
     component: DashboardHomeComponent,
-  },
-  {
-    path: 'flex',
-    loadChildren: () => import('../flex/flex.module').then(res => res.FlexModule)
+    children: [
+      {
+        path: 'resp-flex',
+        loadChildren: () => import('../flex/flex.module').then(m => m.FlexModule)
+      },
+      {
+        path: 'pipe',
+        loadChildren: () => import('../pipe/pipe.module').then(m => m.PipeModule)
+      },
+      {
+        path: '',
+        redirectTo: 'resp-flex',
+        pathMatch: 'full'
+      },
+      {
+        path: '**',
+        redirectTo: 'resp-flex'
+      }
+    ]
   },
   {
     path: '**',

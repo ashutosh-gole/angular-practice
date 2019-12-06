@@ -1,0 +1,41 @@
+@import '../../../styles/variable.scss';
+
+.dashboard-home {
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+
+    .concept-section {
+        background-color: #fff;
+
+        .concept-info {
+            transition: all 0.3s ease-in-out;
+            background-color: #e0e0e0;
+            color: rgba(0, 0, 0, 0.87);
+            margin: 10px 10px;
+            padding: 4px 12px;
+            border-radius: 16px;
+            min-height: 32px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #888484
+            }
+
+            &:active:focus {
+                background-color: #888484;  
+            }
+
+            .lang-name {
+                margin: 4px 0;
+                font-family: $poppins;
+                font-size: 14px;
+                font-weight: bold;
+                opacity: 1;
+            }
+        }
+        
+    }
+
+}
