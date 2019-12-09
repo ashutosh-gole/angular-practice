@@ -8,7 +8,7 @@ import { LanguageModel } from 'src/app/core/models/language.model';
 })
 export class RespFlexComponent implements OnInit {
 
-  languages:LanguageModel[] = [
+  languages: LanguageModel[] = [
     {
       name: "javascript",
       info: "Primarily, JavaScript is light weighed, interpreted and plays a major role in front-end development. Even some of the major social media platforms believe that JavaScript provides an easy way to create interactive web pages smoothly and is career-driven."

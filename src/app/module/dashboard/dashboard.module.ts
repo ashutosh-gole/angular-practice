@@ -27,6 +27,10 @@ const routes: Routes = [
         loadChildren: () => import('../property-binding/property-binding.module').then(m => m.PropertyBindingModule)
       },
       {
+        path: 'hero-tour',
+        loadChildren: () => import('../hero-tour/hero-tour.module').then(m => m.HeroTourModule)
+      },
+      {
         path: '',
         redirectTo: 'resp-flex',
         pathMatch: 'full'

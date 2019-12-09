@@ -1,4 +1,4 @@
 export class LanguageModel {
-    name?:string;
-    info?:string;
+    name?: string;
+    info?: string;
 }

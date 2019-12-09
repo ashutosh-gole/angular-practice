@@ -72,6 +72,10 @@ export class DashboardHomeComponent implements OnInit {
     {
       name: "viewChild",
       path: "/viewChild"
+    },
+    {
+      name: "hero-tour",
+      path: "/hero-tour"
     }
   ];
 
