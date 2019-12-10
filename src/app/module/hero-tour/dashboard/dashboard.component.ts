@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { HeroModel } from 'src/app/core/models/hero.model';
 import { HeroService } from 'src/app/core/services/hero.service';
+import { HeroModel } from 'src/app/core/models/hero.model';
 
 @Component({
-  selector: 'app-hero-tour',
-  templateUrl: './hero-tour.component.html',
-  styleUrls: ['./hero-tour.component.scss']
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.scss']
 })
-export class HeroTourComponent implements OnInit {
+export class DashboardComponent implements OnInit {
 
   heroes: HeroModel[];
-  // selectedHero: HeroModel;
 
   constructor(
     private heroService: HeroService
@@ -26,9 +25,5 @@ export class HeroTourComponent implements OnInit {
     }
     );
   }
-
-  // onSelect(hero: HeroModel): void {
-  //   this.selectedHero = hero;
-  // }
 
 }
