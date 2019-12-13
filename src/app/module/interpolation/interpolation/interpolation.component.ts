@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild,ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-interpolation',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterpolationComponent implements OnInit {
 
+
   city = "pune";
   state = "maharashtra";
-
+  ans ="1";
+  url:any;
+  
   getState(): string {
     return this.state
   }
@@ -17,6 +20,11 @@ export class InterpolationComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  openFile(myFile) {
+    myFile.click();
   }
 
 }

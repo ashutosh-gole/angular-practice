@@ -18,3 +18,36 @@
         </video>
     </div>
 </div>
+<div class="new-example-prop-bind">
+    <input type="text" [value]="nameValue">{{nameValue}}
+    <hr>
+    <input type="text" bind-value="nameValue">{{nameValue}}
+    <hr>
+    <input type="text" value="{{nameValue}}">{{nameValue}}
+    <hr>
+</div>
+
+<div class="new-example-event-bind">
+    <button (click)="changeName1()">changeName1()</button>
+    <hr>
+    <button on-click="changeName2()">changeName2()</button>
+    <hr>
+</div>
+
+<div class="new-example-two-way-bind">
+    <input type="text" [(ngModel)]="nameValue">{{nameValue}}
+    <hr>
+    <input type="text" bindon-ngModel="nameValue">{{nameValue}}
+    <hr>
+</div>
+<hr>
+<!--
+ Angular generates a warning for the following line as it sanitizes them
+ WARNING: sanitizing HTML stripped some content (see http://g.co/ng/security#xss).
+-->
+<p>"<span [innerHTML]="evilTitle"></span>" is the <i>property bound</i> evil title.</p>
+
+<hr>
+<input type="text" [value]="result1" (input)="result1 = $event.target.value">{{result1}}
+<hr>
+<input type="text" [ngModel]="result2" (ngModelChange)="result2 = $event">{{result2}}

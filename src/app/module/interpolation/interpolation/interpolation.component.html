@@ -10,3 +10,11 @@
         my expression 11 + 88 = {{ 11+88 }}
     </div>
 </div>
+
+<div style="background-color: cadetblue;">
+    <h1>{{ !ans ? 11 : 22 }}</h1>
+    <hr>
+    <input type="file" hidden #myFile>
+    <button (click)="openFile(myFile)">Open File</button>
+    <hr>
+</div>

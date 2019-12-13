@@ -36,10 +36,23 @@ export class PropertyBindingComponent implements OnInit {
   //for <video> tag
   myVideoSrc = "https://www.w3schools.com/html/mov_bbb.mp4";
   myType5 = "video/mp4";
+  evilTitle = 'Template <script>alert("evil never sleeps")</script> Syntax';
+
+
+  nameValue = "ashutosh";
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  changeName1() {
+    this.nameValue = "shubham";
+  }
+
+  changeName2() {
+    this.nameValue = "viabhav";
   }
 
 }
