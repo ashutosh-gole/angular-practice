@@ -23,6 +23,10 @@ const routes: Routes = [
         loadChildren: () => import('../interpolation/interpolation.module').then(m => m.InterpolationModule)
       },
       {
+        path: 'input',
+        loadChildren: () => import('../input/input.module').then(m => m.InputModule)
+      },
+      {
         path: 'property-binding',
         loadChildren: () => import('../property-binding/property-binding.module').then(m => m.PropertyBindingModule)
       },

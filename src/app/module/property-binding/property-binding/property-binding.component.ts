@@ -38,7 +38,6 @@ export class PropertyBindingComponent implements OnInit {
   myType5 = "video/mp4";
   evilTitle = 'Template <script>alert("evil never sleeps")</script> Syntax';
 
-
   nameValue = "ashutosh";
 
   constructor() { }
@@ -53,6 +52,8 @@ export class PropertyBindingComponent implements OnInit {
 
   changeName2() {
     this.nameValue = "viabhav";
+
+    console.table([{'a':1,'b':2},{'a':11,'b':22}]);
   }
 
 }

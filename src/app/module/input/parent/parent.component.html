@@ -1,0 +1,3 @@
+<h3>{{childdata | json}}</h3>
+<button (click)="setData()">Set Name To Child</button>
+<app-child [data]="studentData" (dataEvent)="getDataFromParent($event)"></app-child>

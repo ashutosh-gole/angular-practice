@@ -18,6 +18,7 @@
         </video>
     </div>
 </div>
+
 <div class="new-example-prop-bind">
     <input type="text" [value]="nameValue">{{nameValue}}
     <hr>
@@ -39,15 +40,20 @@
     <hr>
     <input type="text" bindon-ngModel="nameValue">{{nameValue}}
     <hr>
+    <input type="text" [value]="result1" (input)="result1 = $event.target.value">{{result1}}
+    <hr>
+    <input type="text" [ngModel]="result2" (ngModelChange)="result2 = $event">{{result2}}
 </div>
-<hr>
-<!--
- Angular generates a warning for the following line as it sanitizes them
- WARNING: sanitizing HTML stripped some content (see http://g.co/ng/security#xss).
--->
-<p>"<span [innerHTML]="evilTitle"></span>" is the <i>property bound</i> evil title.</p>
 
-<hr>
-<input type="text" [value]="result1" (input)="result1 = $event.target.value">{{result1}}
-<hr>
-<input type="text" [ngModel]="result2" (ngModelChange)="result2 = $event">{{result2}}
+<div>
+    <!--
+        Angular generates a warning for the following line as it sanitizes them
+        WARNING: sanitizing HTML stripped some content (see http://g.co/ng/security#xss).
+    -->
+    <p>"<span [innerHTML]="evilTitle"></span>" is the <i>property bound</i> evil title.</p>
+</div>
+
+<div>
+    <input #box (keyup)="0">
+    <p>{{box.value}}</p>
+</div>

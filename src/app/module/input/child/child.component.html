@@ -1,0 +1,9 @@
+<div style="background-color: cornflowerblue;">
+    <h1 *ngIf="data">{{data | json}}</h1>
+    <hr>
+    <button (click)="dataEvent.emit({
+        'name':'ashutosh',
+        'age':'22',
+        'mob':9999999999
+      })">Send To Parent</button>
+</div>
